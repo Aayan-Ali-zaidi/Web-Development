@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 1.63;
+    }
+    header {
+        background-color: cadetblue;
+        align-content: center;
+        text-align: center;
+        height: 175px;
+        color: aliceblue;
+    }
+    table{
+        width: 75%;
+        border-collapse: collapse;
+    }
+    table, th, td, tr{
+        border: 1px solid rgb(58, 107, 197);
+        text-align: left;
+        padding: 5px;
+    }
+    nav {
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(221, 216, 216);
+    }
+
+    nav a{
+        padding: 10px;
+        text-decoration: none;
+        color: aquamarine;
+    }
+    section{
+        display: flex;
+        margin: 20px;
+    }
+    article{
+        order: 1;
+        flex: 2;
+        padding: 10px;
+        background-color: blanchedalmond;
+        margin-right: 15px;
+        box-shadow: 5px 5px 5px 5px;
+        border-radius: 10px;
+    }
+    aside {
+        order: 2;
+        width: 25%;
+        margin-top: 20px;
+        flex: 1;
+        background-color: #f0f0f0;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px;
+      
+        margin-right: 20px;
+        margin-left: 20px;
+
+        
+    }
+
+    footer {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 30px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Your go to place for great content</p>
+        <nav>
+            <a href="">Text</a>
+            <a href="">Media</a>
+            <a href="">Tables</a>
+            <a href="">Lists</a>
+            <a href="">Forms</a>
+        </nav>
+    </header> 
+ 
+    <section> 
+          <aside>
+        <H2>Lorem, ipsum</H2>
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </aside>
+        <article>
+            <h2>About This Page</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eius accusantium aliquam, ad minima
+                cumque pariatur!
+                Voluptates aspernatur fugit doloremque sapiente tenetur harum vero quisquam a. Accusantium eos
+                voluptatem facere.</p>
+                <hr>
+            <h2>Sample Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apples</td>
+                        <td>$2.50</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Bananas</td>
+                        <td>$1.20</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Oranges</td>
+                        <td>$3.00</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Type Fruits</h2>
+            <ul>
+                <li>Citrus Fruits
+                    <ul>
+                        <li>Orange</li>
+                        <li>Lemon</li>
+                    </ul>
+                </li>
+                <li>Berry Fruits
+                    <ul>
+                        <li>Strawberry</li>
+                        <li>Blueberry</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            <form>
+                <h1>Personel Information</h1>
+            
+                <label for="name">Name:-</label><br>
+                <input type="text"name=name><br><br>
+            
+                <label for="email">Email ID:-</label><br>
+                <input type="email"name=Email required minlength="8"><br><br>
+            
+                <label for="Contact">Contact:-</label><br>
+                <input type="text"name=Contact><br><br>
+            
+                <label for="Age">Age:-</label><br>
+                <input type="number"name=Age required><br><br>
+                
+                <h1>Preffered Features</h1>
+            
+                <label for="User Interface">User Interface</label>
+                <input type="Checkbox" name=Features value="User Interface"><br>
+            
+                <label for="Features">Speed</label>
+                <input type="Checkbox" name=Features value="Speed"><br>
+            
+                <label for="Features">Content</label>
+                <input type="Checkbox" name=Features value="Content"><br>
+            
+                <label for="Customer Support">Customer Support</label>
+                <input type="Checkbox" name=Features value="Customer Support"><br><br>
+            
+                <h1><label>Rate this Website</label></h1>
+                <label for="Features">Excellent</label>
+                <input type="Checkbox" name=Features value="Excellent"><br>
+            
+                <label for="Features">Good</label>
+                <input type="Checkbox" name=Features value="Good"><br>
+            
+                <label for="Features">Average</label>
+                <input type="Checkbox" name=Features value="Average"><br>
+            
+                <label for="Features">Poor</label>
+                <input type="Checkbox" name=Features value="Poor"><br><br>
+            
+                <label for="Comment">Comment</label><br>
+                <Textarea placeholder="We create Online Forms"></Textarea>
+                <button type="Reset">Reset</button>
+                <button type="Submit">Submit</button>
+                </form>
+ 
+        </article>
+    </section>
+    <footer>
+        <P>&#169 2024 My Website | All Rights Reserverd</P>
+    </footer>
+</body>
+
+</html>
